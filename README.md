@@ -2,7 +2,37 @@
 
 Welcome to the repo for [pkingston.xyz](https://pkingston.xyz). It contains all of the files for my website, and documents my entire design and development process as a demonstration of competency for employers.
 
+## Designing pkingston.xyz
+
+To see the rationale for why I design my systems like this, scroll down to the **Design Philosophy** section.
+
+### What data is needed?
+
+For ease of understanding everything, I'll be starting with the top down approach of breaking my website into sub-websites and using a bottom up approach with each of those sub systems.
+
+Broader system: Website
+
+Subsystems:
+
+- Homepage
+- Portfolio page
+- About me/contact page
+- Blog
+- Guestbook
+
+#### Homepage
+
+What data does the homepage need?
+
+- My name
+- A way to get to the portfolio page
+- A way to get to the about me/contact page
+- A way to get to the blog page
+- A way to Guestbook
+
 ## Design philosophy
+
+**_NOTE:_** I'm wording this as if it's either/or, but often the most sane way to do things is to break things down with top-down decomposition and then whenever it's time to write code do a bottom-up data oriented approach with the pieces of data you derive from the decomposition step. 
 
 This project is designed with a *Bottom Up* and *Data Oriented* approach. Let's break down each.
 
@@ -60,5 +90,4 @@ So why do we design systems using this approach?
 
 It allows state to be immutable and changed as the result of high level functions that implement the state' = f(state) operations. 
 It also allows the ui to be created incredibly easily. All you need in a ui is to render the easily accessible data. In the event of a high level state' = f(state) function, all you need to do is re-render the necessary parts of the ui.
-
 
